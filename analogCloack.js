@@ -1,6 +1,8 @@
 let hour = document.getElementById('hour');
 let minute = document.getElementById('minute');
 let second = document.getElementById('second');
+let audio = new Audio('./tickTok.mp3');
+
 setInterval(() => {
   let date = new Date();
   let h = date.getHours();
@@ -13,4 +15,5 @@ setInterval(() => {
   hour.style.transform = `rotate(${hrotation}deg)`;
   minute.style.transform = `rotate(${mrotation}deg)`;
   second.style.transform = `rotate(${srotation}deg)`;
+  audio.play();
 }, 1000);
