@@ -1,19 +1,19 @@
 let hour = document.getElementById('hour');
 let minute = document.getElementById('minute');
 let second = document.getElementById('second');
-let audio = new Audio('./tickTok.mp3');
+const tikTikAudio = new Audio('./tickTok.mp3');
 
 setInterval(() => {
   let date = new Date();
   let h = date.getHours();
   let m = date.getMinutes();
   let s = date.getSeconds();
-  let hrotation = 30 * h + m / 2;
-  let mrotation = 6 * m;
-  let srotation = 6 * s;
+  let hRotation = 30 * h + m / 2;
+  let mRotation = 6 * m;
+  let sRotation = 6 * s;
 
-  hour.style.transform = `rotate(${hrotation}deg)`;
-  minute.style.transform = `rotate(${mrotation}deg)`;
-  second.style.transform = `rotate(${srotation}deg)`;
-  audio.play();
+  hour.style.transform = `rotate(${hRotation}deg)`;
+  minute.style.transform = `rotate(${mRotation}deg)`;
+  second.style.transform = `rotate(${sRotation}deg)`;
+  tikTikAudio.play();
 }, 1000);
