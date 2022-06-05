@@ -36,7 +36,7 @@ body {
     margin: auto;
     height: 40vw;
     width: 40vw;
-    background: url(clock.png) no-repeat;
+    background: url(../assets/img/clock.png) no-repeat;
     background-size: 100%;
     border-radius: 50%;
     box-shadow: inset 15px 15px 30px #665800,

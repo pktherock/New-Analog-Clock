@@ -1,7 +1,7 @@
 let hour = document.getElementById('hour');
 let minute = document.getElementById('minute');
 let second = document.getElementById('second');
-const tikTikAudio = new Audio('./tickTok.mp3');
+const tikTikAudio = new Audio('./assets/audio/tickTok.mp3');
 
 setInterval(() => {
   let date = new Date();
